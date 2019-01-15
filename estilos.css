@@ -1,0 +1,1369 @@
+html{
+    height: 100%;
+}
+
+body{
+    background-color: black;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100vw;
+    margin: 0;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'VT323', monospace;
+}
+
+#healthbar{
+    left: 38.5%;
+	top:1%;
+    margin-top: 1%;
+    position: absolute;
+    border: black solid 3px;
+    height: 36px;
+    width: 300px;
+    padding: 0;
+	z-index:1;
+}
+
+#personagem{
+	position:absolute;
+	z-index:1;
+	width : 8.75%;
+	height : 21.25%;
+}
+
+
+/**carrinha**/
+
+#div_carrinha{
+    display: inline-block;
+    height: 100%;
+    position: absolute;
+}
+
+#carrinha{
+    height: 100%;
+    width: auto;
+    z-index: 0;
+}
+
+#cama{
+    z-index: 1;
+    position: absolute;
+    width: 47.92%;
+    height: 14.38%;
+    left: 13%;
+    top: 60%;
+}
+
+#caixote{
+    z-index: 1;
+    position: absolute;
+    width: 7.19%;
+    height: 9.74%;
+    left: 80%;
+    top: 65%;
+}
+
+
+#caixa{
+    z-index: 1;
+    position: absolute;
+    height: 11.82%;
+    width: 12.94%;
+    left: 14%;
+    top: 41%;
+}
+
+#guitarra{
+    z-index: 1;
+    position: absolute;
+    width: 6.07%;
+    height: 12.62%;
+    left: 27%;
+    top: 38%;
+}
+
+#mesa{
+    z-index: 1;
+    position: absolute;
+    width: 21.40%;
+    height: 8.79%;
+    left: 33%;
+    top: 43%;
+}
+
+#radio{
+    z-index: 1;
+    position: absolute;
+    width: 13.5%;
+    height: 12%;
+    left: 37%;
+    top: 40%;
+}
+
+#dialogo_1{
+    position: absolute;
+    z-index: 2;
+    opacity: 1;
+    left: 3%;
+    top: 80.59%;
+    width: 95%;
+    height: 18%;
+    visibility: hidden;
+}
+
+#dialogo_2{
+    position: absolute;
+    z-index: 2;
+    opacity: 1;
+    left: 3%;
+    top: 80.59%;
+    width: 95%;
+    height: 18%;
+    visibility: hidden;
+}
+
+#dialogo_caixote{
+    position: absolute;
+    z-index: 2;
+    opacity: 1;
+    left: 3%;
+    top: 80.59%;
+    width: 95%;
+    height: 18%;
+    visibility: hidden;
+}
+
+#dialogo_cama{
+    position: absolute;
+    z-index: 2;
+    opacity: 1;
+    left: 3%;
+    top: 80.59%;
+    width: 95%;
+    height: 18%;
+    visibility: hidden;
+}
+
+#redirect_carrinha{
+    position: absolute;
+    z-index: 1;
+    height: 2%;
+    width: 8%;
+    top: 48.5%;
+    left: 57%;
+}
+
+#hud_hud{
+    position: absolute;
+    z-index: 3;
+    opacity: 1;
+    left: 67%;
+    top: 1%;
+    width: 32.43%;
+    height: 18.37%;
+    visibility: visible;
+}
+
+#hud_img{
+    height: 100%;
+    width: 100%;
+}
+
+#healthbarv2{
+    position: absolute;
+    left: 8%;
+    top: 61%;
+    height: 18%;
+    width: 69%;
+}
+
+#vp{
+    top: 5%;
+    height: 100%;
+    position: absolute;
+    width: 5%;
+}
+
+
+/**restaurante**/
+
+#div_restaurante{
+    display: inline-block;
+    height: 100%;
+    position: absolute;
+}
+
+#fundo{
+    height: 100vh;
+    width: auto;
+    z-index: 0;
+}
+
+#balcao{
+    z-index: 1;
+    position: absolute;
+    width: 58.31%;
+    height: 27.16%;
+    left: 0;
+    top: 14%;
+}
+
+#balcao_entrada_1{
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    top: 91%;
+    height: 9.42%;
+    width: 33.55%;
+}
+
+#balcao_entrada_2{
+    z-index: 2;
+    position: absolute;
+    left: 66.5%;
+    top: 91%;
+    height: 9.42%;
+    width: 33.55%;
+}
+
+#banco_1{
+    z-index: 1;
+    position: absolute;
+    left: 5%;
+    top: 38%;
+    height: 8.5%;
+    width: 6.49%;
+}
+
+#banco_2{
+    z-index: 1;
+    position: absolute;
+    left: 20%;
+    top: 38%;
+    height: 8.5%;
+    width: 6.49%;
+}
+
+#banco_3{
+    z-index: 1;
+    position: absolute;
+    left: 35%;
+    top: 38%;
+    height: 8.5%;
+    width: 6.49%;
+}
+
+#bancos_cima{
+    z-index: 1;
+    position: absolute;
+    left: 55%;
+    top: 14%;
+    height: 23.32%;
+    width: 10.7%;
+}
+
+#mesa1{
+    z-index: 1;
+    position: absolute;
+    left: 1%;
+    top: 55%;
+    height: 10.06%;
+    width: 20.93%;
+}
+
+#mesa2{
+    z-index: 1;
+    position: absolute;
+    left: 1%;
+    top: 70%;
+    height: 10.06%;
+    width: 20.93%;
+}
+
+#barman{
+    z-index: 0;
+    position: absolute;
+    left: 44%;
+    top: 20.5%;
+    height: 10%;
+    width: 5.75%;
+}
+
+#dialogo1_restaurante{
+    position: absolute;
+    z-index: 2;
+    opacity: 1;
+    left: 3%;
+    top: 80.59%;
+    width: 95%;
+    height: 18%;
+    visibility: hidden;
+}
+
+#dialogo2_restaurante{
+    position: absolute;
+    z-index: 2;
+    opacity: 1;
+    left: 3%;
+    top: 80.59%;
+    width: 95%;
+    height: 18%;
+    visibility: hidden;
+}
+
+#dialogo3_restaurante{
+    position: absolute;
+    z-index: 2;
+    opacity: 1;
+    left: 3%;
+    top: 80.59%;
+    width: 95%;
+    height: 18%;
+    visibility: hidden;
+}
+
+#dialogo4_restaurante{
+    position: absolute;
+    z-index: 2;
+    opacity: 1;
+    left: 3%;
+    top: 80.59%;
+    width: 95%;
+    height: 18%;
+    visibility: hidden;
+}
+
+#dialogo5_restaurante{
+    position: absolute;
+    z-index: 2;
+    opacity: 1;
+    left: 3%;
+    top: 80.59%;
+    width: 95%;
+    height: 18%;
+    visibility: hidden;
+}
+
+#dialogo_opcao_restaurante{
+    position: absolute;
+    z-index: 2;
+    opacity: 0.9;
+    left: 3%;
+    top: 75.7%;
+    width: 95%;
+    height: 23%;
+    visibility: hidden;
+}
+
+#fundo_opcao{
+    z-index: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+#opcao_1{
+    position: absolute;
+    z-index: 3;
+    top: 15%;
+    left: 10%;
+    width: 32.47%;
+    height: 23.54%;
+    
+}
+
+#opcao_2{
+    position: absolute;
+    z-index: 3;
+    top: 55%;
+    left: 10%;
+    width: 32.47%;
+    height: 23.54%;
+   
+}
+
+#opcao_3{
+    position: absolute;
+    z-index: 3;
+    top: 15%;
+    left: 60%;
+    width: 32.47%;
+    height: 23.54%;
+    
+}
+
+#opcao_4{
+    position: absolute;
+    z-index: 3;
+    top: 55%;
+    left: 60%;
+    width: 32.47%;
+    height: 23.54%;
+  
+}
+
+.opcoes{
+    width: 100%;
+    height: 100%;
+}
+
+.opcao_hover :hover{
+    border: yellow 2px solid;
+}
+
+#redirect_restaurante{
+    position: absolute;
+    z-index: 1;
+    left: 35%;
+    top: 95%;
+    height: 5%;
+    width: 30%;
+}
+
+#jukebox_diner{
+    position: absolute;
+    z-index: 1;
+    left: 13%;
+    top: 8%;
+    height: 10%;
+    width: 10%;
+}
+
+/**motel**/
+
+#div_motel{
+    display: inline-block;
+    height: 100%;
+    position: absolute;
+}
+
+#fundo_motel{
+    height: 100vh;
+    width: auto;
+    z-index: 0;
+}
+
+#planta{
+    z-index: 1;
+    position: absolute;
+    height: 16.62%;
+    width: 9.5%;
+    left: 90%;
+    top: 16.3%;
+}
+
+#sofa{
+    z-index: 1;
+    position: absolute;
+    width: 9.5%;
+    height: 29.5%;
+    left: 0;
+    top: 65%;
+
+}
+
+#sofa2{
+    z-index: 1;
+    position: absolute;
+    height: 24.38%;
+    width: 9.5%;
+    left: 90.5%;
+    top: 76%;
+}
+
+#mesa_sofa{
+    z-index: 1;
+    position: absolute;
+    width: 18%;
+    height: 25.25%;
+    left: 70%;
+    top: 65%;
+}
+
+#redirect_motel{
+    z-index: 1;
+    position: absolute;
+    width: 22%;
+    height: 3%;
+    left: 37.5%;
+    top: 95%;
+}
+
+#redirect2_motel{
+    z-index: 1;
+    position: absolute;
+    width: 11%;
+    height: 3%;
+    left: 4%;
+    top: 30%;
+}
+
+
+#virgilio{
+    z-index: 0;
+    position: absolute;
+    left: 60%;
+    top: 15%;
+    width: 5.75%;
+    height: 19.8%;
+}
+
+#dialogo1_motel{
+    position: absolute;
+    z-index: 2;
+    opacity: 1;
+    left: 3%;
+    top: 80.59%;
+    width: 95%;
+    height: 18%;
+    visibility: hidden;
+}
+
+#dialogo_opcao_motel{
+    position: absolute;
+    z-index: 2;
+    opacity: 0.9;
+    left: 3%;
+    top: 75.7%;
+    width: 95%;
+    height: 23%;
+    visibility: hidden;
+}
+
+#fundo_opcao_motel{
+    z-index: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+#opcao_1_motel{
+    position: absolute;
+    z-index: 3;
+    top: 12%;
+    left: 9%;
+    width: 75%;
+    height: 32%;
+}
+
+#opcao_2_motel{
+    position: absolute;
+    z-index: 3;
+    top: 45%;
+    left: 10%;
+    width: 75%;
+    height: 35%;
+}
+
+#dialogo2_motel{
+    position: absolute;
+    z-index: 2;
+    opacity: 1;
+    left: 3%;
+    top: 80.59%;
+    width: 95%;
+    height: 18%;
+    visibility: hidden;
+}
+
+#dialogo3_motel{
+    position: absolute;
+    z-index: 2;
+    opacity: 1;
+    left: 3%;
+    top: 80.59%;
+    width: 95%;
+    height: 18%;
+    visibility: hidden;
+}
+
+/**corredor**/
+
+#div_corredor{
+    display: inline-block;
+    height: 100%;
+    position: absolute;
+}
+
+#corredor_fundo{
+    height: 100vh;
+    width: auto;
+    z-index: 0;
+}
+
+#redirect_corredor_1{
+    z-index: 1;
+    position: absolute;
+    width: 3%;
+    height: 7%;
+    left: 95%;
+    top: 59.5%;
+}
+
+#redirect_corredor_2{
+    z-index: 1;
+    position: absolute;
+    width: 8%;
+    height: 2%;
+    left: 32%;
+    top: 52.5%;
+}
+
+#dialogo1_corredor{
+    position: absolute;
+    z-index: 2;
+    opacity: 1;
+    left: 3%;
+    top: 80.59%;
+    width: 95%;
+    height: 18%;
+    visibility: hidden;
+}
+
+#dialogo2_corredor{
+    position: absolute;
+    z-index: 2;
+    opacity: 1;
+    left: 3%;
+    top: 80.59%;
+    width: 95%;
+    height: 18%;
+    visibility: hidden;
+}
+
+#dialogo3_corredor{
+    position: absolute;
+    z-index: 2;
+    opacity: 1;
+    left: 3%;
+    top: 80.59%;
+    width: 95%;
+    height: 18%;
+    visibility: hidden;
+}
+
+#dialogo4_corredor{
+    position: absolute;
+    z-index: 2;
+    opacity: 1;
+    left: 3%;
+    top: 80.59%;
+    width: 95%;
+    height: 18%;
+    visibility: hidden;
+}
+
+#dialogo_opcao_corredor{
+    position: absolute;
+    z-index: 2;
+    opacity: 0.9;
+    left: 3%;
+    top: 70%;
+    width: 95%;
+    height: 30%;
+    visibility: hidden;
+}
+
+#fundo_opcao_corredor{
+    z-index: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+#opcao_1_corredor{
+    position: absolute;
+    z-index: 3;
+    top: 8%;
+    left: 10%;
+    width: 75%;
+    height: 20%;
+}
+
+#opcao_2_corredor{
+    position: absolute;
+    z-index: 3;
+    top: 28%;
+    left: 10%;
+    width: 75%;
+    height: 20%;
+}
+
+#opcao_3_corredor{
+    position: absolute;
+    z-index: 3;
+    top: 46%;
+    left: 10%;
+    width: 75%;
+    height: 20%;
+}
+
+#opcao_4_corredor{
+    position: absolute;
+    z-index: 3;
+    top: 65%;
+    left: 10%;
+    width: 75%;
+    height: 20%;
+}
+
+#dialogo5_corredor{
+    position: absolute;
+    z-index: 2;
+    opacity: 1;
+    left: 3%;
+    top: 80.59%;
+    width: 95%;
+    height: 18%;
+    visibility: hidden;
+}
+
+#dialogo6_corredor{
+    position: absolute;
+    z-index: 2;
+    opacity: 1;
+    left: 3%;
+    top: 80.59%;
+    width: 95%;
+    height: 18%;
+    visibility: hidden;
+}
+
+#malojo{
+    z-index: 1;
+    position: absolute;
+    left: 44%;
+    top: 34%;
+    height: 23%;
+}
+
+/**quarto**/
+
+#div_quarto{
+    display: inline-block;
+    height: 100%;
+    position: absolute;
+}
+
+#fundo_quarto{
+    height: 100vh;
+    width: auto;
+    z-index: -1;
+}
+
+#fridge_by_blums{
+    z-index: 1;
+    position: absolute;
+    height: 8%;
+    width: 8.5%;
+    left: 30%;
+    top: 46%;
+}
+
+#cama_quarto{
+    z-index: 1;
+    position: absolute;
+    width: 33.5%;
+    height: 18.25%;
+    left: 55%;
+    top: 45%;
+}
+
+#lamp_quarto{
+    z-index: 1;
+    position: absolute;
+    height: 10.5%;
+    width: 2.5%;
+    left: 48%;
+    top: 44%;
+}
+
+#mesa_quarto{
+    z-index: 1;
+    position: absolute;
+    height: 8%;
+    width: 21%;
+    left: 67%;
+    top: 67%;
+}
+
+#redirect_quarto{
+    z-index: 1;
+    position: absolute;
+    width: 8%;
+    height: 2%;
+    left: 24%;
+    top: 71%;
+}
+
+#dialogo1_quarto{
+    position: absolute;
+    z-index: 2;
+    opacity: 1;
+    left: 3%;
+    top: 80.59%;
+    width: 95%;
+    height: 18%;
+    visibility: hidden;
+}
+
+#dialogo2_quarto{
+    position: absolute;
+    z-index: 2;
+    opacity: 1;
+    left: 3%;
+    top: 80.59%;
+    width: 95%;
+    height: 18%;
+    visibility: hidden;
+}
+
+#dialogo_opcao_quarto{
+    position: absolute;
+    z-index: 2;
+    opacity: 0.9;
+    left: 3%;
+    top: 75.7%;
+    width: 95%;
+    height: 23%;
+    visibility: hidden;
+}
+
+#fundo_opcao_quarto{
+    z-index: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+#opcao_1_quarto{
+    position: absolute;
+    z-index: 3;
+    top: 15%;
+    left: 10%;
+    width: 32.47%;
+    height: 23.54%;
+}
+
+#opcao_2_quarto{
+    position: absolute;
+    z-index: 3;
+    top: 55%;
+    left: 10%;
+    width: 32.47%;
+    height: 23.54%;
+}
+
+#opcao_3_quarto{
+    position: absolute;
+    z-index: 3;
+    top: 15%;
+    left: 60%;
+    width: 32.47%;
+    height: 23.54%;
+}
+
+#opcao_4_quarto{
+    position: absolute;
+    z-index: 3;
+    top: 55%;
+    left: 60%;
+    width: 32.47%;
+    height: 23.54%;
+}
+
+#ar_quente{
+    z-index: 1;
+    position: absolute;
+    left: 15.65%;
+    top: 33.5%;
+    height: 5.7%;
+    visibility: hidden;
+}
+
+/**parque1**/
+
+#div_parque1{
+    display: inline-block;
+    height: 100%;
+    position: absolute;
+}
+
+#fundo_parque1{
+    height: 100vh;
+    width: auto;
+    z-index: 0;
+}
+
+#carrinha_parque{
+    z-index: 1;
+    position: absolute;
+    height: 26%;
+    width: 63%;
+    left: 10%;
+    top: 69%;
+}
+
+#redirect1_parque1{
+    z-index: 1;
+    position: absolute;
+    height: 22%;
+    width: 3%;
+    left: 97%;
+    top: 78%;
+}
+
+#redirect2_parque1{
+    z-index: 1;
+    position: absolute;
+    height: 2.5%;
+    width: 15%;
+    left: 29%;
+    top: 93%;
+}
+
+/**parque2**/
+
+#div_parque2{
+    display: inline-block;
+    height: 100%;
+    position: absolute;
+}
+
+#fundo_parque2{
+    height: 100vh;
+    width: auto;
+    z-index: 0;
+}
+
+#redirect1_parque2{
+    z-index: 1;
+    position: absolute;
+    height: 22%;
+    width: 3%;
+    left: 97%;
+    top: 78%;
+}
+
+#redirect2_parque2{
+    z-index: 1;
+    position: absolute;
+    height: 2.5%;
+    width: 15%;
+    left: 47%;
+    top: 88%;
+}
+
+#redirect3_parque2{
+    z-index: 1;
+    position: absolute;
+    height: 22%;
+    width: 3%;
+    left: 0;
+    top: 78%;
+}
+
+#dialogo1_parque2{
+    position: absolute;
+    z-index: 2;
+    opacity: 1;
+    left: 3%;
+    top: 80.59%;
+    width: 95%;
+    height: 18%;
+    visibility: hidden;
+}
+
+#dialogo2_parque2{
+    position: absolute;
+    z-index: 2;
+    opacity: 1;
+    left: 3%;
+    top: 80.59%;
+    width: 95%;
+    height: 18%;
+    visibility: hidden;
+}
+
+/**parque3**/
+
+#div_parque3{
+    display: inline-block;
+    height: 100%;
+    position: absolute;
+}
+
+#fundo_parque3{
+    height: 100vh;
+    width: auto;
+    z-index: 0;
+}
+
+#motel_parque3{
+    z-index: 1;
+    position: absolute;
+    height: 58%;
+    width: 58%;
+    left: 42.1%;
+    top: 31%;
+}
+
+#redirect1_parque3{
+    z-index: 1;
+    position: absolute;
+    height: 22%;
+    width: 3%;
+    left: 0;
+    top: 78%;
+}
+
+#redirect2_parque3{
+    z-index: 1;
+    position: absolute;
+    height: 2.5%;
+    width: 15%;
+    left: 64%;
+    top: 88%;
+}
+
+/**intro**/
+
+#div_intro{
+    display: inline-block;
+    height: 100%;
+    position: absolute;
+}
+
+#intro{
+    height: 100vh;
+    width: auto;
+    z-index: 0;
+}
+
+#intro_png{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    visibility: hidden;
+}
+
+#input_input{
+    z-index: 3;
+    position: absolute;
+    left: 36.5%;
+    top: 65.43%;
+    height: 2.85%;
+    width: 21.8%;
+    background: transparent;
+    border: none;
+    font-family: 'VT323', monospace;
+    font-size: 23px;
+    display: none;
+}
+
+.go_button{
+    z-index: 3;
+    position: absolute;
+    left: 60.3%;
+    top: 65.43%;
+    height: 3.1%;
+    width: 3.1%;
+    font-family: 'VT323', monospace;
+    font-size: 17px;
+    padding: 0;
+    background: transparent;
+    color: white;
+    border: none;
+    display: none;
+}
+
+button.go_button:hover{
+    background: white;
+    color: brown;
+}
+
+#nome_personagem{
+    font-family: 'VT323', monospace;
+    font-size: 23px;
+    position: absolute;
+    top: 25%;
+    left: 33%;
+    width: 45%;
+    height: 15%;
+}
+
+#div_intro2{
+    display: inline-block;
+    height: 100%;
+    position: absolute;
+}
+
+#video_intro{
+    height: 100vh;
+    width: auto;
+    z-index: 0;
+}
+
+#comandos{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    visibility: hidden;
+}
+
+.button_start{
+    position: absolute;
+    left: 40%;
+    top: 75%;
+    width: 20%;
+    height: 10%;
+    background: white;
+    opacity: 0.85;
+    color: brown;
+    font-family: 'VT323', monospace;
+    font-size: 40px;
+    border: none;
+    border-radius: 7px;
+}
+
+#butao_xisde{
+    visibility: hidden;
+}
+
+button.button_start:hover{
+    opacity: 1;
+    font-size: 50px;
+}
+
+/**minijogo**/
+
+#div_minijogo{
+    display: inline-block;
+    height: 100%;
+    position: absolute;
+
+    -webkit-animation: color_change 5s infinite alternate;
+    -moz-animation: color_change 5s infinite alternate;
+    -o-animation: color_change 5s infinite alternate;
+    animation: color_change 5s infinite alternate;
+}
+
+
+#fundo_minijogo{
+    height: 100%;
+    width: auto;
+    z-index: 0;
+    visibility: hidden;
+}
+
+@-webkit-keyframes color_change {
+    0% { background: blue; }
+    25% { background: orange; }
+    50% { background: yellow; }
+    75% { background: black; }
+    100% { background: red; }
+}
+@-moz-keyframes color_change {
+    0% { background: blue; }
+    25% { background: orange; }
+    50% { background: yellow; }
+    75% { background: black; }
+    100% { background: red; }
+}
+@-ms-keyframes color_change {
+    0% { background: blue; }
+    25% { background: orange; }
+    50% { background: yellow; }
+    75% { background: black; }
+    100% { background: red; }
+}
+@-o-keyframes color_change {
+    0% { background: blue; }
+    25% { background: orange; }
+    50% { background: yellow; }
+    75% { background: black; }
+    100% { background: red; }
+}
+@keyframes color_change {
+    0% { background: blue; }
+    25% { background: orange; }
+    50% { background: yellow; }
+    75% { background: black; }
+    100% { background: red; }
+}
+
+
+.obst_mini{
+    position: absolute;
+    width: 10%;
+    height: 10%;
+}
+
+#mais_dez{
+    position: absolute;
+    width: 20%;
+    height: 10%;
+    left: 40%;
+    top: 45%;
+    visibility: hidden;
+}
+
+#mais_cinco{
+    z-index: 4;
+    position: absolute;
+    width: 20%;
+    height: 10%;
+    left: 40%;
+    top: 45%;
+    visibility: hidden;
+}
+
+#zero{
+    position: absolute;
+    width: 20%;
+    height: 10%;
+    left: 40%;
+    top: 45%;
+    visibility: hidden;
+}
+
+
+/**palco**/
+
+#div_palco{
+    display: inline-block;
+    height: 100%;
+    position: absolute;
+}
+
+#fundo_palco{
+    height: 100vh;
+    width: auto;
+    z-index: 0;
+}
+
+#luzes_palco{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    opacity: 0.3;
+}
+
+#guitarra_palco{
+    z-index: 0;
+    position: absolute;
+    width: 5.5%;
+    height: 14.5%;
+    left: 64%;
+    top: 46%;
+}
+
+#mic_palco{
+    z-index: 1;
+    position: absolute;
+    width: 5.3%;
+    height: 14.5%;
+    left: 38%;
+    top: 53%;
+}
+
+#video_bom{
+    display: none;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 0;
+}
+
+#video_mau{
+    display: none;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 0;
+}
+
+#button_restart{
+    display: none;
+    font-size: 22px;
+}
+
+/**cutscene1**/
+
+#div_cutscene1{
+    display: inline-block;
+    height: 100%;
+    position: absolute;
+}
+
+#cutscene1{
+    height: 100vh;
+    width: auto;
+    z-index: 0;
+}
+
+#personagem_mj{
+    animation-name: spin;
+    animation-duration: 4000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+@-ms-keyframes spin {
+    from {
+        -ms-transform: rotate(0deg);
+    } to {
+          -ms-transform: rotate(360deg);
+      }
+}
+@-moz-keyframes spin {
+    from {
+        -moz-transform: rotate(0deg);
+    } to {
+          -moz-transform: rotate(360deg);
+      }
+}
+@-webkit-keyframes spin {
+    from {
+        -webkit-transform: rotate(0deg);
+    } to {
+          -webkit-transform: rotate(360deg);
+      }
+}
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    } to {
+          transform: rotate(360deg);
+      }
+}
+
+#interacao_e{
+    position: absolute;
+    width: 10%;
+    height: 10%;
+    left: 4%;
+    top: 4%;
+    opacity: 1;
+    visibility: hidden;
+}
+
+
